@@ -73,6 +73,9 @@ img {
   color: var(--hero-text-color);
   background-color: var(--accent-color);
   cursor: pointer;
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .button:hover {
   background-color: #188ce8;
@@ -685,6 +688,12 @@ img {
   background-color: #fff;
   border: 1px solid rgba(0, 0, 0, 0.1);
   cursor: pointer;
+}
+.close-btn svg {
+  fill: #000000;
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .close-btn:hover svg {
   fill: var(--accent-color);
